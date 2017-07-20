@@ -1,0 +1,367 @@
+{ 
+    "header": {
+        "_settings":{
+            "title": "",
+            "division": {}
+        },
+        "name": {
+            "type": "String  "
+        },
+        "nature": {
+            "type": "Picker",
+            "values": ["bon_vivant"]
+        },
+        "demeanor": {
+            "type": "Picker",
+            "values": ["bon_vivant"]
+        },
+        "clan": {
+            "type": "Picker",
+            "values": ["brujah", "malkavian"]
+        },
+        "generation": {
+            "type": "Number",
+            "max": 14,
+            "min": 3
+        },
+        "haven": {
+            "type": "String"
+        },
+        "concept": {
+            "type": "String"
+        }
+    },
+    "attributes": {
+        "physical": {
+            "strength": {
+                "type": "Number",
+                "min": 1,
+                "max": 5,
+                "kind": "balls"
+            },
+            "dexterity": {
+                "type": "Number",
+                "min": 1,
+                "max": 5,
+                "kind": "balls"
+            },
+            "stamina": {
+                "type": "Number",
+                "min": 1,
+                "max": 5,
+                "kind": "balls"
+            }
+        },
+        "social": {
+            "charisma": {
+                "type": "Number",
+                "min": 1,
+                "max": 5,
+                "kind": "balls"
+            },
+            "manipulation": {
+                "type": "Number",
+                "min": 1,
+                "max": 5,
+                "kind": "balls"
+            },
+            "appearance": {
+                "type": "Number",
+                "min": 1,
+                "max": 5,
+                "kind": "balls"
+            }
+        },
+        "mental": {
+            "perception": {
+                "type": "Number",
+                "min": 1,
+                "max": 5,
+                "kind": "balls"
+            },
+            "intelligence": {
+                "type": "Number",
+                "min": 1,
+                "max": 5,
+                "kind": "balls"
+            },
+            "wits": {
+                "type": "Number",
+                "min": 1,
+                "max": 5,
+                "kind": "balls"
+            }
+        }
+    },
+    "abilities": {
+        "talents": {
+            "acting": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "alertness": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "athletics": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "brawl": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "dodge": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "empathy": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "intimidation": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "larceny": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "leaderchip": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "subterfuge": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            }
+        },
+        "skills": {
+            "animal_ken": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "archery": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "crafts": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "etiquette": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "herbalism": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "melee": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "music": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "ride": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "stealth": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "survival": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            }
+        },
+        "knowledges": {
+            "academics": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "hearth_wisdom": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "investigation": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "law": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "linguistics": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "medicine": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "occult": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "politics": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "science": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            },
+            "seneschal": {
+                "type": "Number",
+                "min": 0,
+                "max": 5,
+                "kind": "balls"
+            }
+        }
+    },
+    "advantages": {
+        "disciplines": {
+            "type": "MultiPicker",
+            "values": ["animalism", "auspex", "celerity"],
+            "kind": "balls"
+        },
+        "backgrounds": {
+            "type": "MultiPicker",
+            "values": ["allies", "fame", "status"],
+            "kind": "balls"
+        },
+        "virtues": {
+            "conscience__conviction": {
+                "type": "Number",
+                "min": 1,
+                "max": 5,
+                "kind": "balls"
+            },
+            "self_control__instinct": {
+                "type": "Number",
+                "min": 1,
+                "max": 5,
+                "kind": "balls"
+            },
+            "courage": {
+                "type": "Number",
+                "min": 1,
+                "max": 5,
+                "kind": "balls"
+            }
+        }
+    },
+    "footer": {
+        "merits_flaws": {
+            "type": "MultiString"
+        },
+        "humanity__path": {
+            "type": "Mix",
+            "kind": "stack",
+            "types": [
+                {
+                    "type": "String"
+                },
+                { 
+                    "type": "Number",
+                    "kind": "balls",
+                    "min": 0,
+                    "max": 10
+                }
+            ]
+        },
+        "willpower": {
+            "type": "Mix",
+            "kind": "stack",
+            "types": [
+                {
+                    "type": "Number",
+                    "kind": "balls",
+                    "min": 0,
+                    "max": 10
+                },
+                {
+                    "type": "Number",
+                    "kind": "square",
+                    "min": 0,
+                    "max": 10
+                }
+            ]
+        },
+        "blood_pool": {
+            "type": "Number",
+            "min": 0,
+            "max": 20
+        },
+        "health": {
+            "type": "FixedOptions",
+            "kind": "square",
+            "values": ["bruised", "hurt -1", "injured -1", "wounded -2", "mauled -2", "crippled -5", "incapacitated"]
+        },
+        "weakness": {
+            "type": "text"
+        }
+    }
+}
