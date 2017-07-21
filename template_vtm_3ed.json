@@ -7,6 +7,12 @@
         "name": {
             "type": "String  "
         },
+        "player": {
+            "type": "String  "
+        },
+        "chronicle": {
+            "type": "String  "
+        },
         "nature": {
             "type": "Picker",
             "values": ["bon_vivant"]

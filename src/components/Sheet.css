@@ -1,0 +1,69 @@
+.Sheet {
+    display: flex;
+    flex-direction: column;
+}
+
+.Section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Section__Header {
+    align-content: center;
+    flex-grow: 3;
+}
+
+.Section__BasicInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    align-content: space-around;
+    height: 120px;
+    flex-wrap: wrap;
+}
+
+.Section__Column3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.Section__Column3 .Section {
+    display: flex;
+    align-items: center;
+}
+
+.Section__Column3 .Section section {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.Section__BasicInfo span {
+    margin-bottom: 5px;
+}
+
+label {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+input,
+select {
+    border: none;
+    border-bottom: solid 1px #c9c9c9;
+    transition: border 0.3s;
+    font-size: 1.5em;
+}
+
+input[type="text"]:focus,
+input[type="text"].focus,
+select:focus,
+select.focus {
+    outline: none;
+}
