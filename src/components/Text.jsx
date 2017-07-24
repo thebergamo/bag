@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Text = ({ name }) => (
   <span>
-    <label for={name}>{name}:</label>
+    <label htmlFor={name}>{name}:</label>
     <input id={name} type="text" />
   </span>
 );

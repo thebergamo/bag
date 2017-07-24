@@ -26,19 +26,19 @@ const Sheet = ({ title }) => (
         </Section>
         <Section title="Attributes" className="Section__Column3">
             <Section title="Physical">
-                <Text name="strength" />
-                <Text name="dexterity" />
-                <Text name="stamina" />
+                <Number name="strength" kind="balls" min={1} max={5} />
+                <Number name="dexterity" kind="balls" min={1} max={5} />
+                <Number name="stamina" kind="balls" min={1} max={5} />
             </Section>
             <Section title="Social">
-                <Text name="charisma" />
-                <Text name="manipulation" />
-                <Text name="appearance" />
+                <Number name="charisma" kind="balls" min={1} max={5} />
+                <Number name="manipulation" kind="balls" min={1} max={5} />
+                <Number name="appearance" kind="balls" min={1} max={5} />
             </Section>
             <Section title="Mental">
-                <Text name="perception" />
-                <Text name="intelligence" />
-                <Text name="wits" />
+                <Number name="perception" kind="balls" min={1} max={5} />
+                <Number name="intelligence" kind="balls" min={1} max={5} />
+                <Number name="wits" kind="balls" min={1} max={5} />
             </Section>
         </Section>
     </Section>

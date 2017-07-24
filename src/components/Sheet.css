@@ -40,6 +40,14 @@
     align-items: baseline;
     align-content: space-around;
     justify-content: center;
+    width: 100%;
+}
+
+.Section__Column3 .Section section > span {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
 }
 
 .Section__BasicInfo span {
@@ -61,8 +69,8 @@ select {
     font-size: 1.5em;
 }
 
-input[type="text"]:focus,
-input[type="text"].focus,
+input:focus,
+input.focus,
 select:focus,
 select.focus {
     outline: none;

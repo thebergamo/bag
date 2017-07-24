@@ -9,7 +9,7 @@ const renderOptions = (options) =>
 
 const Picker = ({ name, values }) => (
   <span>
-    <label for={name}>{name}:</label>
+    <label htmlFor={name}>{name}:</label>
     <select id={name}>
         {renderOptions(values)}
     </select>
