@@ -1,9 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
+import { startCase } from 'lodash';
 
 const Text = ({ name }) => (
   <span>
-    <label htmlFor={name}>{name}:</label>
+    {name && <label htmlFor={name}>{startCase(name)}:</label>}
     <input id={name} type="text" />
   </span>
 );

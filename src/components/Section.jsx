@@ -1,23 +1,30 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-const renderHeader = (title) => (
-    <header className="Section__Header">
-        <h2>{title}</h2>
-    </header>
-);
+import Header from './Header';
 
-const renderChildren = (children, className) => (
-    <section className={className}>
+const SectionWrapper = styled.section`
+    width: 100%;
+    display: flex;
+    flex-direction: ${props => props.row ? 'row' : 'column' };
+    align-items: baseline;
+
+    > span {
+        width: 100%;
+    }
+`;
+
+const renderChildren = (children, row) => (
+    <SectionWrapper row={row}>
         {children}
-    </section>
+    </SectionWrapper>
 )
 
-const Section = ({ className, title, children }) => (
-  <section className="Section">
-    {title && renderHeader(title)}
-    {children && renderChildren(children, className)} 
-  </section>
+const Section = ({ row, title, children }) => (
+  <SectionWrapper>
+    {title && <Header title={title} />}
+    {children && renderChildren(children, row)} 
+  </SectionWrapper>
 );
 
 export default Section;
