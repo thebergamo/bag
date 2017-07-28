@@ -30,7 +30,6 @@ const MixContainer = styled.div`
     justify-content: space-around;
     padding-bottom: 10px;
     width: '100%';
-    /*${props => props.fixedWidth && props.fixedWidth }*/
 
     ${props => props.stack && stackStyles}
 

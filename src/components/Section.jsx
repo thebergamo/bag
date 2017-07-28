@@ -7,23 +7,27 @@ const SectionWrapper = styled.section`
     width: 100%;
     display: flex;
     flex-direction: ${props => props.row ? 'row' : 'column' };
-    align-items: baseline;
+    align-items: center;
+    margin-bottom: 10px;
 
     > span {
-        width: 100%;
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+
+        > label {
+            min-width: 260px;
+            text-align: end;
+            margin-left: -45px;
+        }
     }
 `;
 
-const renderChildren = (children, row) => (
-    <SectionWrapper row={row}>
-        {children}
-    </SectionWrapper>
-)
-
 const Section = ({ row, title, children }) => (
-  <SectionWrapper>
+  <SectionWrapper row={row}>
     {title && <Header title={title} />}
-    {children && renderChildren(children, row)} 
+    {children} 
   </SectionWrapper>
 );
 

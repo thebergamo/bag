@@ -15,7 +15,7 @@ class App extends Component {
         
         <h1> First Sheet </h1>
 
-        <Sheet title="Vampire: the Mascarade" />
+        <Sheet title="Vampire: The Masquerade" />
         
       </div>
     );
